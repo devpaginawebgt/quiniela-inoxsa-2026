@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@import "./styles.css" layer(base);
+
+@font-face {
+    font-family: 'Brandan';
+    src: url('../../public/fonts/brandan/BrandanPersonalUseRegular.woff2') format('woff2'),
+         url('../../public/fonts/brandan/BrandanPersonalUseRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OptiImprov';
+    src: url('../../public/fonts/optimprov/OPTIImprovNewWideNine.woff2') format('woff2'),
+         url('../../public/fonts/optimprov/OPTIImprovNewWideNine.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@plugin "flowbite/plugin";
+@plugin "@tailwindcss/typography";
+@plugin "@iconify/tailwind4";
+@source "../views/**/*.blade.php";
+@source "../../public/js/*.js";
+@source "../../node_modules/flowbite/dist/flowbite.js";
+
+/* Flowbite drawer — oscurecer más el backdrop sobre fondos dark */
+[drawer-backdrop] {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(1px);
+}
+
+[class*="brands-swiper-"][class*="-pagination"] .swiper-pagination-bullet,
+.carousel-home-banners .swiper-pagination-bullet,
+.carousel-section-banners .swiper-pagination-bullet {
+    background: var(--color-complementary-light);
+    opacity: 1;
+}
+[class*="brands-swiper-"][class*="-pagination"] .swiper-pagination-bullet-active,
+.carousel-home-banners .swiper-pagination-bullet-active,
+.carousel-section-banners .swiper-pagination-bullet-active {
+    background: var(--color-secondary);
+}
+
+@theme {
+    --font-sans: 'Arial', ui-sans-serif, system-ui, sans-serif;
+    --font-brandan: 'Brandan', 'Arial', ui-sans-serif, system-ui, sans-serif;
+    --font-optimprov: 'OptiImprov', ui-sans-serif, system-ui, sans-serif;
+    --color-primary: #feffff;
+    --color-dark: #101820;
+    --color-secondary: #01665e;
+    --color-light: #FFFFFF;
+    --color-complementary-primary: #631316;
+    --color-complementary-secondary: #1d70b7;
+    --color-complementary-dark: #63666A;
+    --color-complementary-light: #D9D9D6;
+}

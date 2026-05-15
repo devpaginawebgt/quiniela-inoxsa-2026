@@ -1,0 +1,39 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\HasOneThrough;
+
+class Preccion extends Model
+{
+    use HasFactory;
+
+    public $timestamps = true;
+
+    protected $fillable = [
+        'user_id',
+        'partido_id',
+        'goles_equipo_1',
+        'goles_equipo_2',
+        'status'
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function partido(): BelongsTo
+    {
+        return $this->belongsTo(Partido::class);
+    }
+
+    public function resultado(): HasOne
+    {
+        return $this->hasOne(ResultadoPartido::class, 'partido_id', 'partido_id');
+    }
+}
