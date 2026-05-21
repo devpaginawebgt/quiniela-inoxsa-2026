@@ -4,6 +4,8 @@
 /public/build
 /storage/*.key
 /vendor
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
 .env
 .env.backup
 .phpunit.result.cache
