@@ -1,11 +1,11 @@
 <x-app-layout>
     <section class="w-full flex flex-1 items-center justify-center px-6 py-12">
         <div class="max-w-xl w-full text-center text-light">
-            <p class="font-brandan text-[8rem] sm:text-[10rem] leading-none text-secondary uppercase">
+            <p class="font-kinesthesia text-[8rem] sm:text-[10rem] leading-none text-secondary uppercase">
                 404
             </p>
 
-            <h1 class="font-brandan uppercase text-3xl sm:text-4xl text-dark mb-4">
+            <h1 class="font-kinesthesia uppercase text-3xl sm:text-4xl text-dark mb-4">
                 Página no encontrada
             </h1>
 

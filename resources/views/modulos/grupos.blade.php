@@ -5,16 +5,16 @@
         <div class="relative flex-1">
             {{-- Background image --}}
             <img
-                src="{{ asset('images/portadas/portada_shared_sm.jpg') }}"
+                src="{{ asset('images/portadas/borde_page.png') }}"
                 alt=""
                 class="absolute inset-0 w-full h-full object-cover"
             >
             {{-- White overlay --}}
-            <div class="absolute inset-0 bg-white mx-4 lg:mx-8 mb-4 lg:mb-8"></div>
+            <div class="absolute inset-0 sm:bg-transparent bg-white mx-4 lg:mx-8 mb-4 lg:mb-8"></div>
 
             <div class="relative px-6 md:px-8 lg:px-12 pb-8 pt-8 mx-auto" style="max-width: min(84rem, calc(100vw - 2rem));">
                 <div class="flex flex-col md:flex-row justify-center items-center md:items-end gap-4 lg:gap-8 2xl:gap-12 mx-auto">
-                    <h1 class="text-center md:text-start text-4xl sm:text-6xl lg:text-8xl uppercase font-brandan mb-8 lg:mb-12">
+                    <h1 class="text-center md:text-start text-4xl sm:text-6xl lg:text-8xl uppercase font-kinesthesia mb-8 lg:mb-12 text-secondary">
                         Grupos conformados
                     </h1>
 
@@ -104,7 +104,7 @@
                         @foreach([$jornada_uno, $jornada_dos, $jornada_tres] as $jornada)
                             @if($jornada && isset($jornada->partidos))
                             <div class="mb-16 sm:mb-24">
-                                <h2 class="text-3xl sm:text-4xl lg:text-5xl uppercase font-brandan mb-4 lg:mb-6 text-center md:text-start">
+                                <h2 class="text-3xl sm:text-4xl lg:text-5xl uppercase font-kinesthesia mb-4 lg:mb-6 text-center md:text-start">
                                     Jornada {{ $jornada->id }}
                                 </h2>
                                 <div class="divide-y divide-zinc-300">

@@ -10,7 +10,7 @@
         <h2 class="text-2xl font-bold text-dark text-center mb-6">Términos y Condiciones</h2>
 
         <p class="text-lg mb-6">
-            Para poder participar en la Quiniela Medpharma 2026, lee cuidadosamente el siguiente documento de Términos y Condiciones.
+            Para poder participar en la Quiniela Inoxsa 2026, lee cuidadosamente el siguiente documento de Términos y Condiciones.
         </p>
 
         <div class="flex justify-between rounded-md overflow-hidden mb-4 text-light">

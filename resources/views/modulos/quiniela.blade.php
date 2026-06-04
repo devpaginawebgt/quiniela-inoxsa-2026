@@ -11,7 +11,7 @@
         <div class="relative flex-1">
             {{-- Background image --}}
             <img
-                src="{{ asset('images/portadas/portada_shared_sm.jpg') }}"
+                src="{{ asset('images/portadas/fondo_principal.jpg') }}"
                 alt=""
                 class="absolute inset-0 w-full h-full object-cover"
             >
@@ -20,12 +20,12 @@
 
             <div class="relative px-6 md:px-8 lg:px-12 pb-16 pt-8 mx-auto" style="max-width: min(84rem, calc(100vw - 2rem));">
 
-                <h1 class="text-center md:text-start text-5xl sm:text-7xl lg:text-8xl uppercase font-brandan max-w-[12ch] mb-2">
+                <h1 class="text-center md:text-start text-5xl sm:text-7xl lg:text-8xl uppercase font-kinesthesia max-w-[12ch] mb-2 text-secondary">
                     Calendario de Partidos
                 </h1>
 
                 <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-                    <h2 class="text-center md:text-start text-2xl sm:text-3xl lg:text-5xl uppercase font-brandan text-zinc-400">
+                    <h2 class="text-center md:text-start text-2xl sm:text-3xl lg:text-5xl uppercase font-kinesthesia text-complementary-secondary">
                         Ingresa tus pronósticos
                     </h2>
 
@@ -61,7 +61,7 @@
 
                     {{-- Lista de partidos --}}
                     @if($records->isEmpty())
-                        <p class="text-center text-zinc-400 py-20 text-lg sm:text-xl lg:text-2xl font-brandan uppercase">
+                        <p class="text-center text-zinc-400 py-20 text-lg sm:text-xl lg:text-2xl font-kinesthesia uppercase">
                             No hay partidos programados para esta jornada.
                         </p>
                     @else
@@ -117,7 +117,7 @@
 
                 {{-- Header --}}
                 <div class="shrink-0 pt-6 pb-4 px-6 flex items-start justify-between gap-4">
-                    <h2 class="text-2xl lg:text-3xl uppercase font-bold text-dark leading-tight font-brandan">Resultado del registro de predicciones</h2>
+                    <h2 class="text-2xl lg:text-3xl uppercase font-bold text-dark leading-tight font-kinesthesia">Resultado del registro de predicciones</h2>
                     <button type="button" id="modal-resultado-close" class="shrink-0 text-complementary-dark hover:text-dark transition-colors mt-1 cursor-pointer">
                         <span class="icon-[fluent--dismiss-16-filled] w-6 h-6"></span>
                     </button>

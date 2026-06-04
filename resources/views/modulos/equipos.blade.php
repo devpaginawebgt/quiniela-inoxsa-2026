@@ -9,7 +9,7 @@
             <div class="absolute inset-0 bg-cover bg-center z-0 hidden lg:block"
                  style="background-image: url({{ asset('/images/portadas/portada-selecciones.jpg') }});"></div>
 
-            <h1 class="uppercase z-10 text-center mt-10 font-brandan text-4xl sm:text-7xl px-4 lg:hidden">Selecciones Clasificadas</h1>
+            <h1 class="uppercase z-10 text-center mt-10 font-kinesthesia text-4xl sm:text-7xl px-4 lg:hidden text-white">Selecciones Clasificadas</h1>
 
             {{-- Contenido --}}
             <div
@@ -26,7 +26,7 @@
             </div>
 
             <div class="w-full max-w-84 aspect-5/6 absolute bottom-0 left-0 right-0 mx-auto bg-cover bg-top z-10 lg:hidden"
-                 style="background-image: url({{ asset('/images/portadas/doctores_selecciones_sm.png') }});"></div>
+                 style="background-image: url({{ asset('/images/portadas/personas_selecciones_sm.png') }});"></div>
         </section>
     </div>
 

@@ -16,9 +16,9 @@
         <div class="relative min-h-screen w-full">
             {{-- Background: main-bg hasta lg, bg-main-web desde lg --}}
             <div class="absolute inset-0 bg-cover bg-top-center lg:hidden"
-                 style="background-image: url({{ asset('images/portadas/banner-auth-sm.jpg') }});"></div>
+                 style="background-image: url({{ asset('images/portadas/banner_login_sm.jpg') }});"></div>
             <div class="absolute inset-0 bg-cover bg-top-right hidden lg:block"
-                 style="background-image: url({{ asset('images/portadas/banner-auth.jpg') }});"></div>
+                 style="background-image: url({{ asset('images/portadas/banner_login.jpg') }});"></div>
             {{-- Overlay oscuro --}}
             <div class="absolute inset-0 bg-black/0"></div>
 
@@ -37,17 +37,17 @@
                     "
                 >
                     {{-- Logo --}}
-                    <div class="mb-4 lg:mb-0">
+                    <div class="mb-4 my-3 lg:mb-0">
                         <img
-                            src="/images/logos/medpharma-logo.jpg"
-                            class="w-full max-w-84 lg:max-w-52 mx-auto hidden lg:flex"
+                            src="/images/logos/pwg-logo.png"
+                            class="w-full max-w-94 lg:max-w-60 mx-auto hidden lg:flex"
                             alt="{{ config('app.name', 'Quiniela') }}"
                         >
                     </div>
 
-                    <div class="hidden lg:flex flex-col items-center justify-center text-dark font-brandan uppercase -mt-2 mb-12">
-                        <span class="text-8xl text-[#9cc600]">Quiniela</span>
-                        <span class="text-6xl text-[#004c3f]">mundialista</span>
+                    <div class="hidden lg:flex flex-col items-center justify-center text-dark font-kinesthesia uppercase -mt-2 mb-12">
+                        <span class="text-8xl text-[#1E5FA0]">Quiniela</span>
+                        <span class="text-6xl text-[#2B8FD4]">Inoxsa</span>
                     </div>
 
                     {{-- Session Status --}}
@@ -56,7 +56,7 @@
                     {{-- Toast Errors --}}
                     <x-toast-errors :errors="$errors" />
 
-                    <h1 class="text-3xl lg:hidden text-dark text-center mb-6 font-brandan uppercase">Inicia sesión</h1>
+                    <h1 class="text-3xl lg:hidden text-secondary text-center mb-6 font-kinesthesia uppercase">Inicia sesión</h1>
 
                     {{-- Login Form --}}
                     <form

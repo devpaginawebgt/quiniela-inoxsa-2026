@@ -48,8 +48,8 @@
 
         <div class="flex gap-4 justify-start items-center">
             {{-- Logo --}}
-            <a href="{{ route('web.inicio') }}" class="shrink-0 w-32">
-                <img src="{{ asset('images/logos/medpharma-logo.jpg') }}" alt="Medpharma" class="w-full max-w-32">
+            <a href="{{ route('web.inicio') }}" class="shrink-0 w-32 ">
+                <img src="{{ asset('images/logos/pwg-logo-sin-letras.png') }}" alt="PWG" class="w-full max-w-40">
             </a>
 
             {{-- Separador --}}
@@ -114,7 +114,7 @@
 <div id="mobile-nav-drawer" class="lg:hidden fixed top-16 left-0 right-0 z-40 bg-white shadow-xl transition-transform -translate-y-full pt-6 p-4" tabindex="-1">
     <p class="flex items-start gap-3 text-sm text-dark mb-4">
         <span class="icon-[fluent--person-12-filled] w-10 h-10"></span>
-        <span class="uppercase text-2xl font-brandan">{{ $username }}</span>
+        <span class="uppercase text-2xl font-kinesthesia">{{ $username }}</span>
     </p>
 
     <div class="flex flex-col gap-1 font-sans">

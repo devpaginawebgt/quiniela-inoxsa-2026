@@ -40,12 +40,12 @@
                     <div class="mb-4 lg:mb-0">
                         <img
                             src="/images/logos/medpharma-logo.jpg"
-                            class="w-full max-w-84 lg:max-w-52 mx-auto hidden lg:flex"
+                            class="w-full max-w-84 lg:max-w-60 mx-auto hidden lg:flex"
                             alt="{{ config('app.name', 'Quiniela') }}"
                         >
                     </div>
 
-                    <div class="hidden lg:flex flex-col items-center justify-center text-dark font-brandan uppercase -mt-2 mb-12">
+                    <div class="hidden lg:flex flex-col items-center justify-center text-dark font-kinesthesia uppercase -mt-2 mb-12">
                         <span class="text-8xl text-[#9cc600]">Quiniela</span>
                         <span class="text-6xl text-[#004c3f]">mundialista</span>
                     </div>
@@ -53,7 +53,7 @@
                     {{-- Toast Errors --}}
                     <x-toast-errors :errors="$errors" />
 
-                    <h1 class="text-3xl text-dark text-center mb-4 font-brandan uppercase">
+                    <h1 class="text-3xl text-dark text-center mb-4 font-kinesthesia uppercase">
                         Nueva contraseña
                     </h1>
 

@@ -30,7 +30,7 @@ export const renderMatchCard = (partido) => {
             <span class="text-base sm:text-sm md:text-base lg:text-lg uppercase">${partido.equipoUno.nombre}</span>
         </div>
 
-        <div class="flex flex-row sm:flex-col gap-2 sm:gap-0 items-center shrink-0 text-center px-2 text-xl sm:text-md md:text-xl lg:text-2xl font-brandan">
+        <div class="flex flex-row sm:flex-col gap-2 sm:gap-0 items-center shrink-0 text-center px-2 text-xl sm:text-md md:text-xl lg:text-2xl font-kinesthesia">
             <span>${formatFecha(partido.fechaPartido)}</span>
             <span>${formatHora(partido.fechaPartido)}</span>
         </div>

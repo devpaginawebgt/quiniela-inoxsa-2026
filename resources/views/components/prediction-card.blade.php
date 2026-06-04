@@ -60,7 +60,7 @@
 
         {{-- Hora --}}
         <div class="shrink-0 text-center">
-            <span class="text-lg md:text-base lg:text-2xl font-brandan">{{ $hora_fmt }}</span>
+            <span class="text-lg md:text-base lg:text-2xl font-kinesthesia">{{ $hora_fmt }}</span>
         </div>
 
         {{-- Input Equipo 2 + Equipo 2 --}}
@@ -92,13 +92,13 @@
     {{-- Resultado y mensaje (solo si estado === 1 y tiene resultado) --}}
     @if($partido->estado === 1 && !empty($resultado))
         <div class="flex flex-col items-center mt-3">
-            <p class="text-2xl lg:text-4xl font-brandan uppercase">
+            <p class="text-2xl lg:text-4xl font-kinesthesia uppercase">
                 Resultado
             </p>
             <p class="text-2xl lg:text-4xl font-optimprov">
                 {{ $resultado->goles_equipo_1 }}-{{ $resultado->goles_equipo_2 }}
             </p>
-            <p class="font-brandan text-2xl lg:text-3xl text-zinc-400 mt-1">
+            <p class="font-kinesthesia text-2xl lg:text-3xl text-zinc-400 mt-1">
                 {{ $registro->mensaje }}
             </p>
         </div>

@@ -41,7 +41,7 @@ const renderJornadasGrupo = (jornadas) => {
 
     contenedor.innerHTML = jornadas.map(jornada => `
         <div class="mb-24">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl uppercase font-brandan mb-4 lg:mb-6 text-center md:text-start">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl uppercase font-kinesthesia mb-4 lg:mb-6 text-center md:text-start">
                 Jornada ${jornada.value}
             </h2>
             <div class="divide-y divide-zinc-300">

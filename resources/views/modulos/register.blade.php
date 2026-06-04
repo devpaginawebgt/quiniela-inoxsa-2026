@@ -16,9 +16,9 @@
         <div class="relative min-h-screen w-full">
             {{-- Background --}}
             <div class="absolute inset-0 bg-cover bg-top-center lg:hidden"
-                 style="background-image: url({{ asset('images/portadas/banner-auth-sm.jpg') }});"></div>
+                 style="background-image: url({{ asset('images/portadas/banner_registro_sm.jpg') }});"></div>
             <div class="absolute inset-0 bg-cover bg-top-right hidden lg:block"
-                 style="background-image: url({{ asset('images/portadas/banner-auth.jpg') }});"></div>
+                 style="background-image: url({{ asset('images/portadas/banner_registro.jpg') }});"></div>
             {{-- Overlay --}}
             <div class="absolute inset-0 bg-black/0"></div>
 
@@ -38,7 +38,7 @@
                 >
                     <div class="overflow-y-auto my-auto">
 
-                        {{-- Logo --}}
+                        {{-- Logo 
                         <div class="mb-4">
                             <img
                                 src="/images/logos/logo-quiniela.png"
@@ -46,11 +46,21 @@
                                 alt="{{ config('app.name', 'Quiniela') }}"
                             >
                         </div>
+                        --}}
 
-                        {{-- <div class="hidden lg:flex flex-col items-center justify-center text-dark font-brandan uppercase -mt-2 mb-12">
-                            <span class="text-8xl text-[#9cc600]">Quiniela</span>
-                            <span class="text-6xl text-[#004c3f]">mundialista</span>
-                        </div> --}}
+                        {{-- Logo --}}
+                        <div class="mb-4">
+                            <img
+                                src="/images/logos/pwg-logo.png"
+                                class="w-full max-w-60 mx-auto"
+                                alt="{{ config('app.name', 'Quiniela') }}"
+                            >
+                        </div>
+
+                         <div class="hidden lg:flex flex-col items-center justify-center text-dark font-kinesthesia uppercase -mt-2 mb-12">
+                            <span class="text-7xl text-[#1E5FA0]">Quiniela</span>
+                            <span class="text-5xl text-[#2B8FD4]">Inoxsa</span>
+                        </div> 
     
                         {{-- Title --}}
                         <h1 class="text-2xl text-center font-bold text-complementary-dark mb-4">Crear cuenta</h1>

@@ -16,9 +16,9 @@
         <div class="relative min-h-screen w-full">
             {{-- Background: main-bg hasta lg, bg-main-web desde lg --}}
             <div class="absolute inset-0 bg-cover bg-top-center lg:hidden"
-                 style="background-image: url({{ asset('images/portadas/banner-auth-sm.jpg') }});"></div>
+                 style="background-image: url({{ asset('images/portadas/banner_registro_sm.jpg') }});"></div>
             <div class="absolute inset-0 bg-cover bg-top-right hidden lg:block"
-                 style="background-image: url({{ asset('images/portadas/banner-auth.jpg') }});"></div>
+                 style="background-image: url({{ asset('images/portadas/banner_registro.jpg') }});"></div>
             {{-- Overlay oscuro --}}
             <div class="absolute inset-0 bg-black/0"></div>
 
@@ -39,21 +39,21 @@
                     {{-- Logo --}}
                     <div class="mb-4 lg:mb-0">
                         <img
-                            src="/images/logos/medpharma-logo.jpg"
-                            class="w-full max-w-84 lg:max-w-52 mx-auto hidden lg:flex"
+                            src="/images/logos/pwg-logo.png"
+                            class="w-full mb-4 max-w-70 lg:max-w-60 mx-auto hidden lg:flex"
                             alt="{{ config('app.name', 'Quiniela') }}"
                         >
                     </div>
 
-                    <div class="hidden lg:flex flex-col items-center justify-center text-dark font-brandan uppercase -mt-2 mb-12">
-                        <span class="text-8xl text-[#9cc600]">Quiniela</span>
-                        <span class="text-6xl text-[#004c3f]">mundialista</span>
+                    <div class="hidden lg:flex flex-col items-center justify-center text-dark font-kinesthesia uppercase -mt-2 mb-12">
+                        <span class="text-7xl text-[#1E5FA0]">Quiniela</span>
+                        <span class="text-5xl text-[#2B8FD4]">Inoxsa</span>
                     </div>
 
                     {{-- Toast Errors --}}
                     <x-toast-errors :errors="$errors" />
 
-                    <h1 class="text-3xl text-dark text-center mb-4 font-brandan uppercase">
+                    <h1 class="text-3xl text-secondary text-center mb-4 font-kinesthesia uppercase">
                         Recuperar Contraseña
                     </h1>
 

@@ -5,7 +5,7 @@
         <div class="relative flex-1 pb-16">
             {{-- Background image --}}
             <img
-                src="{{ asset('images/portadas/portada_shared_sm.jpg') }}"
+                src="{{ asset('images/portadas/fondo_principal.jpg') }}"
                 alt=""
                 class="absolute inset-0 w-full h-full object-cover"
             >
@@ -15,7 +15,7 @@
             <div class="relative px-6 md:px-8 lg:px-12 pb-8 pt-8 overflow-hidden mx-auto" style="max-width: min(84rem, calc(100vw - 2rem));">
 
                 <div class="flex flex-col md:flex-row justify-center items-center md:justify-between md:items-end gap-4 lg:gap-8 2xl:gap-12 mx-auto mb-8 lg:mb-12">
-                    <h1 class="text-center md:text-start text-5xl sm:text-6xl lg:text-8xl uppercase font-brandan">
+                    <h1 class="text-center md:text-start text-5xl sm:text-6xl lg:text-8xl uppercase font-kinesthesia text-secondary">
                         Estadios del mundial
                     </h1>
 

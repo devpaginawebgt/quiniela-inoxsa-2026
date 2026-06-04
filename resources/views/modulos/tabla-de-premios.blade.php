@@ -5,7 +5,7 @@
         <div class="relative flex-1">
             {{-- Background image --}}
             <img
-                src="{{ asset('images/portadas/portada_shared_sm.jpg') }}"
+                src="{{ asset('images/portadas/fondo_principal.jpg') }}"
                 alt=""
                 class="absolute inset-0 w-full h-full object-cover"
             >
@@ -14,7 +14,7 @@
 
             <div class="relative px-6 md:px-8 lg:px-12 pb-16 pt-8 mx-auto" style="max-width: min(84rem, calc(100vw - 2rem));">
 
-                <h1 class="text-center md:text-start text-5xl sm:text-7xl lg:text-8xl uppercase font-brandan max-w-[12ch]">
+                <h1 class="text-center md:text-start text-5xl sm:text-7xl lg:text-8xl uppercase font-kinesthesia max-w-[12ch]">
                     Premios Ganadores
                 </h1>
 
@@ -28,10 +28,10 @@
                         <div class="flex flex-col {{ $isEven ? 'md:flex-row' : 'md:flex-row-reverse' }} items-start gap-6 lg:gap-12">
                             {{-- Texto --}}
                             <div class="flex-1 {{ $isEven ? 'md:text-left' : 'md:text-right' }} text-center mt-16">
-                                <p class="text-3xl sm:text-4xl lg:text-5xl font-brandan uppercase text-[#95c908]">
+                                <p class="text-3xl sm:text-4xl lg:text-5xl font-kinesthesia uppercase text-secondary mb-2">
                                     {{ $premio->titulo_posicion }}
                                 </p>
-                                <h2 class="text-5xl sm:text-7xl lg:text-8xl font-brandan uppercase leading-tight">
+                                <h2 class="text-5xl sm:text-7xl lg:text-8xl font-kinesthesia uppercase leading-tight">
                                     {{ $premio->nombre }}
                                 </h2>
                             </div>

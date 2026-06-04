@@ -45,17 +45,17 @@
                         >
                     </div>
 
-                    <div class="hidden lg:flex flex-col items-center justify-center text-dark font-brandan uppercase -mt-2 mb-8">
+                    <div class="hidden lg:flex flex-col items-center justify-center text-dark font-kinesthesia uppercase -mt-2 mb-8">
                         <span class="text-8xl text-[#9cc600]">Quiniela</span>
                         <span class="text-6xl text-[#004c3f]">mundialista</span>
                     </div>
 
                     <div class="w-full max-w-108 mx-auto text-center">
-                        <p class="font-brandan text-7xl lg:text-8xl leading-none text-secondary uppercase mb-2">
+                        <p class="font-kinesthesia text-7xl lg:text-8xl leading-none text-secondary uppercase mb-2">
                             404
                         </p>
 
-                        <h1 class="text-3xl text-dark mb-4 font-brandan uppercase">
+                        <h1 class="text-3xl text-dark mb-4 font-kinesthesia uppercase">
                             Página no encontrada
                         </h1>
 

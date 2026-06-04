@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
 
                     <!-- VS -->
-                    <span class="text-lg text-zinc-400 font-brandan shrink-0">VS</span>
+                    <span class="text-lg text-zinc-400 font-kinesthesia shrink-0">VS</span>
 
                     <!-- Marcador + Equipo 2 -->
                     <div class="flex items-center justify-between flex-row-reverse md:flex-row w-full md:w-auto md:flex-1 md:min-w-0 gap-3">
