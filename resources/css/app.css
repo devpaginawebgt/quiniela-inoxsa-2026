@@ -19,6 +19,70 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'BarlowCondensed';
+    src: url('../../public/fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BarlowCondensed';
+    src: url('../../public/fonts/Barlow_Condensed/BarlowCondensed-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BarlowCondensed';
+    src: url('../../public/fonts/Barlow_Condensed/BarlowCondensed-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BarlowCondensed';
+    src: url('../../public/fonts/Barlow_Condensed/BarlowCondensed-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BarlowCondensed';
+    src: url('../../public/fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BarlowCondensed';
+    src: url('../../public/fonts/Barlow_Condensed/BarlowCondensed-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kinesthesia';
+    src: url('../../public/fonts/kinesthesia/Kinesthesia-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kinesthesia';
+    src: url('../../public/fonts/kinesthesia/Kinesthesia-SemiBoldItalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
 @plugin "flowbite/plugin";
 @plugin "@tailwindcss/typography";
 @plugin "@iconify/tailwind4";
@@ -46,14 +110,15 @@
 
 @theme {
     --font-sans: 'Arial', ui-sans-serif, system-ui, sans-serif;
-    --font-brandan: 'Brandan', 'Arial', ui-sans-serif, system-ui, sans-serif;
+    --font-kinesthesia: 'Kinesthesia', ui-sans-serif, system-ui, sans-serif;
     --font-optimprov: 'OptiImprov', ui-sans-serif, system-ui, sans-serif;
+    --font-barlow: 'BarlowCondensed', ui-sans-serif, system-ui, sans-serif;
     --color-primary: #feffff;
     --color-dark: #101820;
-    --color-secondary: #01665e;
+    --color-secondary: #192a77;
     --color-light: #FFFFFF;
-    --color-complementary-primary: #631316;
-    --color-complementary-secondary: #1d70b7;
+    --color-complementary-primary: #1c46ed;
+    --color-complementary-secondary: #102a91;
     --color-complementary-dark: #63666A;
     --color-complementary-light: #D9D9D6;
 }
