@@ -10,7 +10,7 @@
 
     <!-- Preheader (texto oculto que se muestra como vista previa en algunos clientes) -->
     <div style="display:none; max-height:0; overflow:hidden; mso-hide:all;">
-        Restablece tu contraseña de la Quiniela Medpharma. El enlace expira pronto.
+        Restablece tu contraseña de la Quiniela Inoxsa. El enlace expira pronto.
     </div>
 
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f1f3f7;">
@@ -24,8 +24,8 @@
                     <tr>
                         <td align="center" style="background-color:#FFFFFF; padding:36px 24px 28px 24px;">
                             <img
-                                src="{{ rtrim(config('app.url'), '/') . '/images/logos/logo-quiniela.png' }}"
-                                alt="{{ config('app.name', 'Quiniela Medpharma') }}"
+                                src="{{ rtrim(config('app.url'), '/') . '/images/logos/pwg-logo.png' }}"
+                                alt="{{ config('app.name', 'Quiniela Inoxa') }}"
                                 width="280"
                                 style="display:block; width:280px; max-width:100%; height:auto; margin:0 auto;"
                             >
@@ -34,13 +34,13 @@
 
                     <!-- Acento amarillo -->
                     <tr>
-                        <td style="height:6px; background-color:#01665e; line-height:6px; font-size:0;">&nbsp;</td>
+                        <td style="height:6px; background-color:#192a77; line-height:6px; font-size:0;">&nbsp;</td>
                     </tr>
 
                     <!-- Título -->
                     <tr>
                         <td style="padding:36px 36px 8px 36px;">
-                            <h1 style="margin:0; font-size:24px; line-height:1.3; color:#01665e; font-weight:700;">
+                            <h1 style="margin:0; font-size:24px; line-height:1.3; color:#192a77; font-weight:700;">
                                 Restablece tu contraseña
                             </h1>
                         </td>
@@ -69,7 +69,7 @@
                         <td align="center" style="padding:28px 36px 8px 36px;">
                             <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
-                                    <td align="center" bgcolor="#01665e" style="border-radius:10px;">
+                                    <td align="center" bgcolor="#192a77" style="border-radius:10px;">
                                         <a href="{{ $url }}"
                                            target="_blank"
                                            style="display:inline-block; padding:14px 36px; font-family: Arial, Helvetica, sans-serif; font-size:15px; font-weight:bold; color:#FFFFFF; text-decoration:none; border-radius:10px; letter-spacing:0.3px;">
@@ -108,7 +108,7 @@
                                 Si el botón no funciona, copia y pega esta URL en tu navegador:
                             </p>
                             <p style="margin:0; font-size:13px; line-height:1.6; word-break:break-all;">
-                                <a href="{{ $url }}" target="_blank" style="color:#2b336b; text-decoration:underline;">{{ $url }}</a>
+                                <a href="{{ $url }}" target="_blank" style="color:#192a77; text-decoration:underline;">{{ $url }}</a>
                             </p>
                         </td>
                     </tr>
@@ -126,7 +126,7 @@
                     <tr>
                         <td style="padding:32px 36px 32px 36px;">
                             <p style="margin:0; font-size:12px; line-height:1.6; color:#63666A; text-align:center;">
-                                &copy; {{ date('Y') }} {{ config('app.name', 'Quiniela Medpharma') }}.
+                                &copy; {{ date('Y') }} {{ config('app.name', 'Quiniela Inoxsa') }}.
                             </p>
                         </td>
                     </tr>

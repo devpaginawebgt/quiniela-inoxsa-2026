@@ -27,7 +27,7 @@ class WelcomeMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Te damos la bienvenida a la Quiniela Medpharma',
+            subject: 'Te damos la bienvenida a la Quiniela Inoxsa',
         );
     }
 
