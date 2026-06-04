@@ -17,8 +17,13 @@ class CodigoSeeder extends Seeder
     {
         // Códigos para usuarios Medpharma por país (ver UserSeeder)
         $medpharmaCodigos = [
-            ['codigo' => 'MEDPHAGT', 'country_id' => 1],
-            ['codigo' => 'MEDPHASV', 'country_id' => 1],            
+            ['codigo' => 'INOXAGT', 'country_id' => 1],
+            ['codigo' => 'INOXASV', 'country_id' => 1],
+            ['codigo' => '12345AZC', 'country_id' => 1],    
+            ['codigo' => '12346DEF', 'country_id' => 1],    
+            ['codigo' => '12347GIJ', 'country_id' => 1],    
+            ['codigo' => '12348KLM', 'country_id' => 1],    
+            ['codigo' => '12349NOP', 'country_id' => 1],                
         ];
 
         $nowMedpharma = now();
