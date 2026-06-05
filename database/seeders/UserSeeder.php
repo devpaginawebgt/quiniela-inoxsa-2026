@@ -36,7 +36,7 @@ class UserSeeder extends Seeder
             [
                 'codigo_id'        =>  2,
                 'nombres'          =>  'User',
-                'apellidos'        =>  'Medpharma',
+                'apellidos'        =>  'Inoxsa',
                 'numero_documento' =>  '1234567891112',
                 'telefono'         =>  '63443211',
                 'email'            =>  'soporte@paginawebguatemala.com',

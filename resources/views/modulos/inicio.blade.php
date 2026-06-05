@@ -4,8 +4,8 @@
 
         <section>
             <picture>
-                <source media="(min-width: 768px)" srcset="{{ asset('/images/portadas/banner_login.jpg') }}">
-                <img src="{{ asset('/images/portadas/banner_login_sm.jpg') }}" alt="Bienvenido a la quiniela" class="w-full">
+                <source media="(min-width: 768px)" srcset="{{ asset('/images/portadas/banner_inicio.jpg') }}">
+                <img src="{{ asset('/images/portadas/banner_inicio_sm.jpg') }}" alt="Bienvenido a la quiniela" class="w-full">
             </picture>
         </section>
 
