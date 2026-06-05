@@ -66,7 +66,7 @@
                     <tr>
                         <td align="center" style="background-color:#FFFFFF; padding:36px 24px 28px 24px;">
                             <img
-                                src="{{ $baseUrl . '/images/logos/logo-quiniela.png' }}"
+                                src="{{ $baseUrl . '/images/logos/pwg-logo.png' }}"
                                 alt="{{ config('app.name', 'Quiniela Inoxsa') }}"
                                 width="280"
                                 style="display:block; width:280px; max-width:100%; height:auto; margin:0 auto;"
@@ -114,7 +114,7 @@
                                 <tr>
                                     <td align="center" style="padding:8px 0 16px 0;">
                                         <img
-                                            src="{{ $baseUrl . '/images/decoracion/qr-code-login.png' }}"
+                                            src="{{ $baseUrl . '/images/decoracion/qr-code-login-inoxsa.png' }}"
                                             alt="Código QR para ingresar"
                                             width="200"
                                             style="display:block; width:200px; max-width:60%; height:auto; margin:0 auto; border:1px solid #e5e7eb; border-radius:8px;"
