@@ -39,7 +39,7 @@ class UserSeeder extends Seeder
                 'apellidos'        =>  'Inoxsa',
                 'numero_documento' =>  '1234567891112',
                 'telefono'         =>  '63443211',
-                'email'            =>  'soporte@paginawebguatemala.com',
+                'email'            =>  'inoxsa@acceso.com',
                 'pais_id'          =>  1,
                 'status_user'      =>  1,
                 'puntos'           =>  0,
