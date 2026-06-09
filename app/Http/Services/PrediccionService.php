@@ -161,7 +161,7 @@ class PrediccionService {
 
             }
 
-            $fecha_limite = $fecha_partido->subMinutes(60);
+            $fecha_limite = $fecha_partido->subMinutes(10);
 
             if ($fecha_actual->greaterThan($fecha_limite)) {
 
