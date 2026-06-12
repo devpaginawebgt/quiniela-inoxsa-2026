@@ -111,9 +111,7 @@ class UserService {
             ->has('predictions')
             ->where('status_user', 1)
             ->where('pais_id', $id_pais)
-            ->where('puntos', '>', 0)
-            ->orderByDesc('puntos')
-            ->orderBy('nombres')
+            ->where('puntos', '>', 0)            
             ->limit(10)
             ->get();
     }
