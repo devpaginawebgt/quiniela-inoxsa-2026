@@ -26,7 +26,9 @@ class UsuariosExport implements FromQuery, WithHeadings, WithMapping, WithChunkR
                         ->orWhereHas('country', fn($country) => $country->where('name', 'like', "%{$this->search}%"));
                 });
             })
-            ->orderBy('puntos', 'desc');
+            ->orderBy('puntos', 'desc')
+            ->orderBy('created_at', 'asc')
+            ->orderBy('id');
     }
 
 
@@ -63,7 +65,7 @@ class UsuariosExport implements FromQuery, WithHeadings, WithMapping, WithChunkR
             $user->telefono ?? 'N/A',
             $user->country?->name ?? 'N/A',
             $user->puntos,
-            $user->created_at->timezone('America/Guatemala')->format('d/m/Y H:i'),
+            $user->created_at->timezone('America/Guatemala')->format('d/m/Y H:i:s'),
             $user->status_user ? 'Activo' : 'Inactivo',
         ];
     }

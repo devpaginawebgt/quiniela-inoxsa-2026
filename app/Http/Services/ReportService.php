@@ -11,7 +11,9 @@ class ReportService
     {
         return User::with(['country'])
             ->select('users.*')
-            ->orderBy('puntos', 'desc');
+            ->orderBy('puntos', 'desc')
+            ->orderBy('created_at', 'asc')
+            ->orderBy('id');
     }
 
     public function getPronosticos()
@@ -24,6 +26,7 @@ class ReportService
             'resultado',
         ])
             ->select('preccions.*')
-            ->orderBy('preccions.created_at', 'desc');
+            ->orderBy('preccions.created_at', 'desc')
+            ->orderBy('id');
     }
 }
