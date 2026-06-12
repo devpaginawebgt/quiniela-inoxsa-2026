@@ -78,12 +78,7 @@ class PartidoService {
     public function actualizarPuntosEquipos()
     {
         $partidosJugados = EquipoPartido::select('id', 'equipo_1', 'equipo_2', 'partido_id')
-            ->with([
-                'partido:id,estado',
-                'equipoUno:id,nombre,goles_favor,goles_contra,partidos_jugados,partidos_ganados,partidos_perdidos,partidos_empatados,puntos',
-                'equipoDos:id,nombre,goles_favor,goles_contra,partidos_jugados,partidos_ganados,partidos_perdidos,partidos_empatados,puntos',
-                'resultado:id,partido_id,goles_equipo_1,goles_equipo_2',
-            ])
+            ->with(['partido', 'equipoUno', 'equipoDos', 'resultado'])
             ->has('resultado')
             ->whereHas('partido', function(Builder $query) {
                 $query->whereNot('estado', 1);
