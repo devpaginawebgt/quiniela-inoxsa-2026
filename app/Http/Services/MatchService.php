@@ -230,6 +230,8 @@ class MatchService
                     'equipo_ganador_id' => $ganador_id,
                 ]);
 
+                ResultCreated::dispatch($resultado);
+
                 $nombre1 = $equipos->equipoUno?->nombre ?? "Equipo #{$equipos->equipo_1}";
                 $nombre2 = $equipos->equipoDos?->nombre ?? "Equipo #{$equipos->equipo_2}";
                 $ganadorTexto = match (true) {
@@ -250,10 +252,12 @@ class MatchService
                         "Ganador:        {$ganadorTexto}\n" .
                         "Status API:     {$fixture->status_short} ({$fixture->status_long})";
 
-                    Mail::to($emailTo)->send(new SystemNotification($subject, $body));
+                    try {
+                        Mail::to($emailTo)->send(new SystemNotification($subject, $body));
+                    } catch (Throwable $mailEx) {
+                        Log::warning('MatchService::getMatchesResult — fallo al enviar correo informativo :: ' . $mailEx->getMessage());
+                    }
                 }
-
-                ResultCreated::dispatch($resultado);
 
                 $created++;
             }
