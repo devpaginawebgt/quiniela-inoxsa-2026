@@ -97,7 +97,6 @@ class MatchService
                             'fecha_partido'  => $fixture->date,
                             'estadio_id'     => 1,
                             'fase'           => null,
-                            'brand_id'       => null,
                             'jugado'         => 0,
                             'estado'         => 0,
                             'api_fixture_id' => $fixture->api_fixture_id,
